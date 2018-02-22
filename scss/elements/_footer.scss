@@ -1,0 +1,14 @@
+footer {
+  font-weight: 600;
+  @include flex(row, center, center);
+
+  p { 
+    color: $shade-heading;
+    font-size: $font-small;
+  }
+
+  a { 
+    color: $shade-placeholder;
+    text-decoration: none; 
+  }
+}

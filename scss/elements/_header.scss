@@ -1,0 +1,19 @@
+header {
+  height: 250px;
+  @include flex(column, center, center);
+
+  img { width: 40px; }
+  h1, p { margin: 10px; }
+
+  h1 { 
+    color: $shade-heading;
+    font-size: $font-extraLarge; 
+  }
+
+  p {
+    color: $shade-details;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: $font-medium;
+    text-align: center;
+  }
+}

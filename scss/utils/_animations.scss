@@ -1,0 +1,33 @@
+.burst { 
+  -webkit-animation: fadeIn 1s linear; /* Safari & Chrome */
+  -moz-animation: fadeIn 1s linear; /* Firefox */
+  -ms-animation: fadeIn 1s linear; /* Internet Explorer */
+  -o-animation: fadeIn 1s linear; /* Opera */
+  animation: fadeIn 1s linear; 
+}
+.animate-in {  
+  -webkit-animation: slideUp .4s ease-in-out both, fadeIn .2s linear both;  /* Safari & Chrome */
+  -moz-animation: slideUp .4s ease-in-out both, fadeIn .2s linear both;  /* Firefox */
+  -ms-animation: slideUp .4s ease-in-out both, fadeIn .2s linear both;  /* Internet Explorer */
+  -o-animation: slideUp .4s ease-in-out both, fadeIn .2s linear both;  /* Opera */
+  animation: slideUp .4s ease-in-out both, fadeIn .2s linear both; 
+}
+@keyframes slideUp {
+  from { transform: translateY(100px); }
+  to { transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 0.85; }
+}
+
+.animate-out { animation: slideDown .4s ease-in-out both, fadeOut .2s linear both; }
+@keyframes slideDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(100px); }
+  100% { transform: translateY(0); }
+}
+@keyframes fadeOut {
+  from { opacity: .85; }
+  to { opacity: 0; }
+}
