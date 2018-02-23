@@ -17,13 +17,13 @@ const getRandomQuote = () => {
   return new Promise((resolve, reject) => {
 
     const quotes = [
-      `"I haven't been everywhere, but it's on my list. - Susan Sontag"`,
-      `"It is better to travel well than to arrive. - Buddha"`,
-      `"Exploration is really the essence of the human spirit. - Frank Borman"`,
-      `"A good traveler has no fixed plans, and is not intent on arriving. - Lao Tzu"`,
-      `The real voyage of discovery consists not in seeking new landscapes, but in having new eyes. - Marcel Proust`,
-      `Travel brings power and love back into your life. - Jalaluddin Rumi`,
-      `Travel far enough, you meet yourself. - David Mitchell`
+      `"I haven't been everywhere, but it's on my list." - Susan Sontag`,
+      `"It is better to travel well than to arrive." - Buddha`,
+      `"Exploration is really the essence of the human spirit." - Frank Borman`,
+      `"A good traveler has no fixed plans, and is not intent on arriving." - Lao Tzu`,
+      `"The real voyage of discovery consists not in seeking new landscapes, but in having new eyes." - Marcel Proust`,
+      `"Travel brings power and love back into your life." - Jalaluddin Rumi`,
+      `"Travel far enough, you meet yourself." - David Mitchell`
     ];
 
     const randomQuote = quotes[Math.floor((Math.random() * 4))];
@@ -74,11 +74,15 @@ const display = val => {
 
       <div id="${index}" class="details details-${index}">
         <span>
-          <img src="../assets/user-icon.svg">
+          <div> 
+            <img src="assets/user-icon.svg">
+          </div>
           ${el.user.name}
         </span>
         <span>
-          <img src="../assets/heart.svg">
+          <div>
+            <img src="assets/heart.svg">
+          </div>
           ${el.likes}
         </span>
       </div>

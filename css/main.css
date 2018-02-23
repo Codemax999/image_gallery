@@ -108,7 +108,7 @@ main {
       height: 100%;
       object-fit: cover;
       width: 100%; }
-  main div {
+  main .details {
     background: #000;
     height: 100px;
     opacity: 0;
@@ -121,17 +121,26 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-    main div span {
+    main .details span {
       color: #FEFFFF;
+      letter-spacing: .5px;
       align-items: center;
       display: flex;
       flex-direction: row;
       justify-content: center; }
-    main div img {
-      background: transparent;
+    main .details div {
       height: 25px;
       padding: 3px 10px;
-      width: 25px; }
+      width: 25px;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+    main .details img {
+      background: transparent;
+      height: 100%;
+      object-fit: contain;
+      width: 100%; }
 
 footer {
   font-weight: 600;
